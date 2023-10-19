@@ -1,0 +1,622 @@
+/* [Master Stylesheet] */
+/* ----------------------------------------------------------
+    :: Template 
+    :: Author: Turbo
+    :: Author URL:www.boo-code.com 
+    :: Version: 1.0
+    :: Created: 10 2023
+    :: Last Updated: 10 2023
+    ---------------------------------------------------------- */
+/* -------------------------------------------------
+    ============ PLACE YOUR CUSTOM CSS HERE ============
+    ------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4d4d4d;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.section_title.main {
+  color: #ffca10;
+  font-size: 64px;
+}
+
+.section_padding {
+  padding: 80px 0;
+}
+
+.mainBtn {
+  background: #ffca10;
+  color: #343739;
+  padding: 10px 50px;
+  border-radius: 0px;
+  border: 2px solid #ffca10;
+  transition: all 0.3s ease-in-out;
+}
+.mainBtn:hover {
+  background: transparent;
+  color: #ffca10;
+}
+
+.hero {
+  background: url(../images/hero_bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero .caption_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  z-index: 1;
+  width: 80%;
+  padding: 0 15px;
+}
+.hero .caption_box .caption h1 {
+  font-size: 68px;
+  font-weight: 700;
+  color: #ffca10;
+  margin-bottom: 30px;
+}
+.hero .caption_box .caption h1 span {
+  color: #ffca10;
+}
+.hero .caption_box .caption p {
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+nav.navbar {
+  background: transparent;
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #cbcbcb;
+}
+nav.navbar .dropdown-menu {
+  background: #333;
+}
+nav.navbar .dropdown-menu .dropdown-item:focus,
+nav.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #191919;
+}
+nav.navbar.active {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav.navbar .navbar-brand img {
+  max-width: 100%;
+  height: 60px;
+}
+nav.navbar .navbar-nav {
+  gap: 40px;
+}
+nav.navbar .navbar-nav li a {
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+nav.navbar .navbar-nav li a:hover {
+  color: #ffca10;
+}
+nav.navbar .navbar-nav .nav-link.active,
+nav.navbar .navbar-nav .show > .nav-link {
+  color: #ffca10;
+}
+
+.who_we_are {
+  position: relative;
+  z-index: 1;
+  margin-top: -140px;
+  padding-bottom: 80px;
+}
+.who_we_are .content-box {
+  padding-top: 130px;
+}
+
+.best_price {
+  padding-top: 80px;
+  background: url(../images/best_price_bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 160px;
+}
+.best_price h2.section_title {
+  margin-bottom: 100px;
+}
+.best_price .best_price_box {
+  background: url(../images/best_price_frame.svg) no-repeat center top;
+  padding: 0 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.best_price .best_price_box .icon {
+  padding-inline-start: 40px;
+  margin-top: -60px;
+  height: 98px;
+}
+.best_price .best_price_box p {
+  color: #fff;
+  margin-top: 40px;
+  line-height: 1.8;
+  font-size: 18px;
+  min-height: 255px;
+}
+
+.just_in_time {
+  position: relative;
+}
+.just_in_time .fly_box {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  padding: 80px;
+  background: #ffca10;
+  z-index: 1;
+  top: -80px;
+  box-shadow: -15px 21px 16px rgba(0, 0, 0, 0.168627451);
+}
+.just_in_time .fly_box h3 {
+  color: #343739;
+  font-size: 52px;
+  font-weight: 700;
+  padding-inline-start: 200px;
+}
+.just_in_time .fly_box img {
+  float: inline-end;
+}
+.just_in_time .just_in_time_box {
+  background: url(../images/just_in_time_bg.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 10% 100px 380px;
+}
+.just_in_time .just_in_time_box p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.global_reach {
+  padding: 100px 0;
+}
+.global_reach h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.global_reach p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+.guraranteed {
+  padding: 100px 0;
+  background: #f6f6f6;
+  color: #4d4d4d;
+}
+.guraranteed h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.guraranteed h2 {
+  font-size: 38px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.guraranteed p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.guraranteed .products {
+  margin-top: 80px;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.guraranteed .products .product {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.guraranteed .products .product .img_box {
+  background: #ffca10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+.guraranteed .products .product .img_box img {
+  height: 80px;
+}
+.guraranteed .products .product h4 {
+  color: #4d4d4d;
+  font-size: 22px;
+}
+
+.contact {
+  padding: 100px 0;
+  background: url(../images/contact_bg.svg) no-repeat center bottom;
+  background-size: contain;
+}
+.contact h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.contact .contact_box {
+  background: #fff;
+  padding: 80px 80px 50px 360px;
+  box-shadow: 18px 13px 29px rgba(0, 0, 0, 0.1098039216);
+  border: 2px solid #f1f1f1;
+  position: relative;
+}
+.contact .contact_box .fly_box {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: -150px;
+  width: 450px;
+  padding: 30px 60px;
+  background: url(../images/contact_box.svg) no-repeat center center;
+  background-size: cover;
+}
+.contact .contact_box .fly_box h4 {
+  font-size: 28px;
+  color: #343739;
+  margin-bottom: 40px;
+}
+.contact .contact_box .fly_box .contact_list {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4d4d4d;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.contact .contact_box .fly_box .contact_list h5 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact .contact_box .fly_box .contact_list img {
+  margin-top: 4px;
+}
+.contact .contact_box h4 {
+  font-size: 28px;
+  color: #343739;
+  margin-bottom: 20px;
+}
+.contact .contact_box input {
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 20px;
+  width: 100%;
+  outline-color: #ffca10;
+}
+.contact .contact_box textarea {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  margin-bottom: 20px;
+  resize: none;
+  outline-color: #ffca10;
+}
+
+footer {
+  padding-top: 80px;
+  background: url(../images/footer_bg.svg) no-repeat center center;
+  background-size: cover;
+}
+footer .logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 100px;
+  margin-bottom: 40px;
+}
+footer .links {
+  margin-bottom: 40px;
+  gap: 40px;
+}
+footer .links a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+footer .links a:hover {
+  color: #ffca10;
+}
+footer .bottom_footer {
+  background: #171717;
+  margin-top: 80px;
+  padding: 12px 0;
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 16px;
+}
+footer .bottom_footer p {
+  margin: 0;
+}
+
+.navbar.internal {
+  background: #343739;
+  border-bottom-color: #707070;
+}
+.navbar.internal li a {
+  color: #fff;
+}
+
+.banner {
+  background: url(../images/banner_bg.jpg) no-repeat center center;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.banner h2 {
+  font-size: 48px;
+  color: #000000;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.who_we_are {
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+.who_we_are .content-box {
+  padding-top: 20px;
+}
+.who_we_are .content-box p {
+  font-size: 19px;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+.who_two {
+  background: #F6F6F6;
+  padding: 80px 0;
+}
+.who_two p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.who_two h2 {
+  color: #4D4D4D;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.who_two h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 6px;
+  background: #ffca10;
+}
+
+.who_three {
+  padding: 100px;
+  padding: 100px 0;
+  background: url(../images/contact_bg.svg) no-repeat center bottom;
+  background-size: contain;
+}
+.who_three h2 {
+  color: #4D4D4D;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.who_three p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hero .caption_box .caption h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .hero .caption_box .caption p {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .mainBtn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .navbar-toggler {
+    background: rgba(255, 255, 255, 0.6352941176);
+  }
+  .navbar-collapse {
+    background: #000000;
+    z-index: 1001;
+    padding: 5px 20px;
+  }
+  .navbar-nav {
+    gap: 10px;
+  }
+  img.who_we_are_oil {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .who_we_are .content-box {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .who_we_are {
+    padding-bottom: 40px;
+  }
+  .section_title.main {
+    font-size: 44px;
+  }
+  .best_price .best_price_box {
+    padding: 0 30px;
+    background-size: 100%;
+    margin-bottom: 80px;
+  }
+  .best_price .best_price_box p {
+    font-size: 16px;
+    min-height: 200px;
+  }
+  .just_in_time .fly_box {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    z-index: 12;
+  }
+  .just_in_time .fly_box img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  .just_in_time .fly_box h3 {
+    padding-inline-start: 25px;
+  }
+  .just_in_time .just_in_time_box {
+    padding: 40px;
+    margin-top: -80px;
+  }
+  .global_reach h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .global_reach {
+    padding: 50px 0;
+  }
+  .guraranteed h1 {
+    font-size: 42px;
+  }
+  .guraranteed h2 {
+    font-size: 24px;
+  }
+  .guraranteed {
+    padding: 50px 0;
+  }
+  .guraranteed p {
+    width: 90%;
+  }
+  .guraranteed .products {
+    justify-content: center;
+  }
+  .contact .contact_box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .contact .contact_box .fly_box {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact h2 {
+    font-size: 36px;
+  }
+  .just_in_time .row {
+    width: 103%;
+  }
+  footer .logo {
+    height: 75px;
+  }
+  footer .links {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .who_two {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .who_two .row {
+    flex-direction: column-reverse;
+  }
+  .who_two .row img {
+    margin-bottom: 30px;
+  }
+  .who_three {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .who_three img {
+    margin-bottom: 30px;
+    height: 100px;
+  }
+}
+/* galaxy S5 */
+/* iphone x, 6/7/8 */
+/* iphone 6/7/8 plus */
+/* ipad */
+/* ipad pro  */
+/* 17 inch *//*# sourceMappingURL=style.css.map */
